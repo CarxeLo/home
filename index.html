@@ -1,0 +1,93 @@
+<!--Name: Carxe Lo
+<!--Date: June 20, 2020-->
+<!DOCTYPE html>
+<html lang>
+	<head>
+		<meta charset="UTF-8">
+		<title>Power Supply</title>
+		<link rel="stylesheet" href="mycss.css">
+	</head>
+	
+	<body>
+		<h1>Welcome to Power Supply Units!</h1>
+		<table class="navigate">
+			<tr>
+				<th>Links</th>
+			</tr>
+			<tr>
+				<td><a href="spec_info.html">History and Development</a></td>
+			</tr>
+			<tr>
+				<td><a href="more_info.html">More Information</a></td>
+			</tr>
+			<tr>
+				<td><a href="references.html">References and Sources</a></td>
+			</tr>
+		</table>
+		<!--This table is to house the links in a more organized format.-->
+		<h2>General Information</h2>
+		<h3>Functionality</h3>
+		<p>
+			The power supply of a computer system, also known as a PSU, provides the electricity for each other the hardware components in the computer as well as the peripherals connected to the computer to function.
+			The power supply unit is a hardware component that converts the AC (alternating current) from a typical household power outlet into a low-voltage direct current (DC).
+			Normally, the voltage of the AC current is between 110-230 volts and it is converted to a much steadier low voltage current that can be used by the various hardware components in the CPU. 
+			The PSU is integral to the function of a computer system because it provides all necessary energy needed to process and output information. 
+		</p>
+		<h3>Category</h3>
+		<p>
+			Power supply units fall in the category of processing. Though they do not process the information in a computer information system, the PSU does, however, process the AC current entering the component. 
+			There are three main types of PSUs in broad use today. These include switch, linear and battery. However, battery based power supply units are generally used for portable power usages.
+			The AC is changed into a DC when it exits the component and moves to the next hardware components that require the electricity. 
+			These may include the hard drive, the motherboard, the fan, and the optical drive.
+			Similar to how computers take in information, change it and then output it to the user, a PSU does the same thing to an electric current.
+		</p>
+		<h3>How does a PSU work?</h3>
+			<img src="images/psu_diagram.jpg" alt="Power Conversion Diagram" width="650">
+			<br>
+			Sho Kikugawa. Block Diagram. 2015. PC Gamer. <a href="https://www.pcgamer.com/how-pc-power-supplies-work/"> https://www.pcgamer.com/how-pc-power-supplies-work/</a>
+			<!--Below are the steps in order to turn AC into usable DC for the PC system.-->
+			<h4>Filtering</h4>
+				<p>
+					The AC coming from the wall outlet is very unsteady and can be harmful to delicate hardware parts of a computer or any appliance. So to reduce this, the AC current goes through a process known as AC filtering. 
+					AC filtering uses special PSU parts called capacitors, specifically X and Y capacitors. It may also use special circuitry to protect against sudden current surges from the wall outlet. During this process, the 
+					PSU tries to "clean up" the current by getting rid of the noise. The noise is produced by the rapid backa nd forth movement of the current. The familiar hum of electricity flowing through the cord or in an appliance
+					is the sound that the PSU is trying to filter out.
+				</p>
+			<h4>Rectifying</h4>
+				<p>
+					Since an alternating current moves so fast, switching from positive and negative charges so quickly, no tasks can be done using the energy. 
+					So PSU rectifies or fixes the current into a direct current that is positive, after it is filtered.
+					This process happens very closely after the initial filtering. A device called a reservoir capacitor, similar to the X and Y capacitors used during filtering, traps some of the energy from the alternating current and stores it.
+					It then releases the energy in a slower, and more stable direct flow. It must be noted that the electricity is only released when the capacitor reaches a certain amount of voltage, otherwise the capacitor will continue to store energy until it reaches that point.
+					Because the filtering process and the rectifying process are so intimately linked, the two steps are often referred to together as filtering and rectifying. But certain sources may sometimes break it into two steps.
+				</p>
+			<h4>Power Factor Correcting(PFC)</h4>
+				<p>
+					During power correction, the AC current has two unique properties called active and reactive power.
+					Reactive power is the energy that works on inductors and transistors, while active power is the energy that actually works such as making mechanical parts move.
+					In power correction, the inductors or transistors try to make the balance between active and reactive power both be as close to 1 as possible. Normally, both of these properties are quantified to be less than 1.
+					But what are transistors and inductors and what’s the difference between them?
+					Well, transistors are used in a specific method of PFC that is called active power correction. In this method, “active” electric components, such as circuits and transistors are used to change the active and reactive power ratio.
+					Inductors on the other hand are used in a process called passive power correction. Passive power correction uses “passive” electric components such as inductors and capacitors to achieve the same result. 
+					There are some differences between the two methods. If you are interested in learning more about passive PFC, <a href="https://www.nuvation.com/resources/article/power-supply-design-basics-passive-pfc-design">click here.</a> And if you are interested in active PFC, 
+					<a href="https://www.nuvation.com/resources/article/power-supply-design-basics-active-power-factor-correction">click here.</a>
+				</p>
+			<h4>Transforming</h4>
+				<p>
+					During the transforming process, it’s quite simple. The DC current that is outputted by the PFC process has voltage that is too high for other components to utilize. 
+					So a transformer changes the DC current to have a voltage of normally 12V for most hardware components. But it also changes part of the current into a 5V or 3.3V that is used to maintain the computer so that it can be turned on with the on-switch on the CPU.
+				</p>
+			<h4>Rectifying and Filtering: Second Time</h4>
+				<p>
+					The current that exits the transformer is often noisy and can be unstable. So to fix this, a second round of rectifying and filtering is done to clean up the current once more, before it goes through the rest of the computer components.
+					This step is no different than steps one and two, where the AC current went through capacitors to be stabilized. This also minimizes the amount of noise coming from the moving current, making the user’s experience using the CPU much more desirable.
+				</p>
+			<h4>Switching</h4>
+				<p>
+					Switching is a step that replaces steps 4-6 in a switch power supply. In a linear power supply, it carries out all the steps outlined above, but in a switch power supply, some of the steps are replaced by a new step called switching. 
+					There are both benefits and drawbacks of this type of power supply which are discussed in the <a href="more_info.html">More Information</a> section.
+					After this, the current can be used by the rest of the computer to process and output information.
+					It is clear that a lot of work is put into a seemingly simple task, but it truly emphasises how critical the power supply is to the computer system.
+				</p>
+	</body>
+</html>

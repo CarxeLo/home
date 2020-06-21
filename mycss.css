@@ -1,0 +1,46 @@
+/*Name: Carxe Lo*/
+/*Date: June 20, 2020*/
+body {
+	background-color: white;
+	font-family: Helvetica;
+	color: #4D4D4D;
+	margin-left: 80px;
+	margin-right: 80px;
+	margin-bottom: 60px;
+}
+
+th, td {
+	border-bottom: 1px solid #ddd;
+}
+
+h1 {
+	text-align: center;
+	color: #2F4858;
+	font-size: 40px;
+}
+
+h2 {
+	color: #336699
+}
+
+img {
+	padding-top: 20px;
+	padding-bottom: 20px;
+	margin-left: 300px;
+}
+
+.iframe {
+	display: block;
+	margin: auto;
+}
+
+.navigate {
+	margin: auto;
+	text-align: center;
+	border-style: solid;
+}
+
+.compare {
+	margin: auto;
+}
+
